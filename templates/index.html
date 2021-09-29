@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <style>
+	.bordered {
+	  width: 1501px;
+	  height: 695px;
+	  padding: 20px;
+	  border: 10px solid rgb(35, 36, 34);
+	  border-radius: 8px;
+	}
+  </style>
+  
+  <div class="bordered">
+  <title> Fake Or Not</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+
+</head>
+
+<body>
+	<p><b>--Please enter the news title below to check if the news is fake or not--</b></p>
+    <div class="loader"></div>
+    <div class="login">
+	<h1><u>Fake News Detector</u></h1>
+   <form action="{{ url_for('predict')}}" method="POST">
+   	<textarea  name="message" rows="6" cols="50" required="required" style="font-size: 18pt"></textarea>
+   <br> </br>
+    <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+       	<div class="results">
+
+	{% if prediction == [0] %}
+		<h2 style="color:red;">News looks FAKE</h2>
+	{% elif prediction == [1] %}
+		<h2 style="color:green;">News looks REAL</h2>
+	{% endif %}
+
+	</div>
+
+    </form>
+
+</div>

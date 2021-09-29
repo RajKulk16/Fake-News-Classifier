@@ -1,0 +1,79 @@
+.mytab {
+  border-collapse: collapse;
+  margin-left:175px;
+  margin-top: 0px;
+  font-size: 1.0em;
+  font-family: sans-serif;
+  width: 75%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.55);
+}
+
+.mytab thead tr{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.mytab td, th{
+     border: 3px solid black;
+    text-align: center;
+    font-weight:bold;
+    padding: 12px 15px;
+}
+
+.mytab tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+.mytab tr:nth-child(even) {
+    background-color: #d7acac;
+}
+.mytab tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+h1,h4{
+  margin-top: 50px;
+  text-align: center;
+  padding-bottom: 0.7em;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: black;
+}
+h4{
+  margin-top: 50px;
+  text-align: center;
+  padding-bottom: 0.7em;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+}
+h2{
+  padding-bottom: 0.7em
+  margin-bottom: 7px;
+}
+em {
+  font-weight: bold;
+  text-shadow: 0px 5px 5px #234D3C;
+}
+h3{
+  margin-top: 50px;
+  text-align: center;
+  padding-bottom: 0.7em;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+}
+video{
+  display: block;
+  width: 65%;
+  margin: 0 auto;
+  box-shadow: 0 0 27px 0 rgba(0, 0, 0, 0.55);
+}

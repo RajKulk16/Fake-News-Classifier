@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+     <link rel= "stylesheet" type="text/css" href= "{{ url_for('static',filename='table.css') }}">
+       <style>
+         .bordered {
+          width: 1420px;
+          height: auto;
+          padding: 20px;
+          border: 10px solid rgb(35, 36, 34);
+          border-radius: 8px;
+        }
+      </style>
+
+      <script type = "text/javascript"
+              src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vissense/0.9.0/vissense.js"></script>
+      <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CIntersectionObserverEntry"></script>
+
+ <script type = "text/javascript"
+       src = "{{ url_for('static',filename='videoIO.js') }}" defer>
+</script>
+
+        <div class="bordered">
+
+    <title>Covid Graphs</title>
+</head>
+    <h2 style="text-align: center; border:3px; border-style:solid; border-color:#FF0000; padding: 1em;">Graphs shown below compare the Covid-19 situation with different timelines/months</h2>
+    <iframe src='https://flo.uri.sh/visualisation/7305229/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:75%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/7305229/?utm_source=embed&utm_campaign=visualisation/7305229' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+    <br> </br>
+    <br> </br>
+    <br> </br>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~srmvin/11.embed" height="525" width="75%"></iframe>
+    <div class="boxhead">
+    <h1>Next <em>5 days</em> prediction</h1>
+    </div>
+
+    {% for table in table1 %}
+
+           {{ table|safe }}
+    {% endfor %}
+    <br> </br>
+    <h3>Graph visualization of LR and SVM predictions</h3>
+
+
+  <video class = "video" loop="loop" controls="controls" >
+          <source src="{{ url_for('static',filename='images/svmLR_brazil.mp4')}}" type="video/mp4">
+  </video>
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+
+  <div >
+  <video class = "video" loop="loop"  controls="controls" >
+        <source src="{{ url_for('static',filename='images/svm+lr_india.mp4')}}" type="video/mp4">
+  </video>
+  </div >
+  <br></br>
+  <h4>LR and SVM model (Next 5 days)</h4>
+
+    {% for t in table2 %}
+
+           {{ t|safe }}
+    {% endfor %}
+  </table>
+  <br></br>
+  <br></br>
+  <br></br>
+
+  <div class="flourish-embed flourish-chart" style = "width:70%; margin: 0 auto; box-shadow:0 0 27px 0 rgba(0, 0, 0, 0.55);" data-src="story/767666"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+</div>
+</div>
+</html>
