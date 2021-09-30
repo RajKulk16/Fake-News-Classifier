@@ -1,6 +1,6 @@
 # Fake-News-Classifier
 
-This project contains 2 components. The opening page consists of fake news statistics (pie chart) and much information about the same. 
+This project contains 2 components. The opening page consists of fake news statistics (interactive pie chart) and much information about the same. 
 
 First component is to check whether the news is fake or not. "train.csv" is used for checking if the news is fake or not. The model has been trained with respect to the title. Two Jupyter Notebooks are used for this project. One is for EDA and the other is for flask. The default port for flask is set to 2000 but can be changed. 
 
