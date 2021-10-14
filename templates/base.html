@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .bordered {
+          width: 1420px;
+          height: auto;
+          padding: 20px;
+          border: 10px solid rgb(35, 36, 34);
+          border-radius: 8px;
+        }
+      </style>
+
+      <div class="bordered">
+    <title>RV Fake News Detection System</title>
+    <style>
+        h1{
+            text-decoration: underline;
+            text-decoration-style: double;
+        }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+</head>
+<body>
+
+<!--  -->
+<!-- same here also -->
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--  -->
+
+
+    <h1 style="text-align: center;"><u>Fake News Detection</u></h1>
+    <div class="image-gallery">
+        <img src="{{ url_for('static',filename='images/rick-morty.gif')}}" alt="fake news img-3"  width="350px" height="300px">
+        <img src="{{ url_for('static',filename='images/covid-social-media.gif')}}" alt="fake news img-4"  width="350px" height="300px">
+        <img src="{{ url_for('static',filename='images/another.gif')}}" alt="fake news img-4"  width="350px" height="300px">
+        <img src="{{ url_for('static',filename='images/another2.gif')}}" alt="fake news img-4"  width="370px" height="300px">
+        <div class="clear"></div>
+        </div>
+    <h2>Introduction</h2>
+    <p style="font-family: Arial, Helvetica, sans-serif;">
+        News media has become a channel to pass on the information of what’s happening in the world to the people living. Often people perceive whatever conveyed in the news to be true. There were circumstances where even the news channels acknowledged that their news is not true as they wrote. But some news has a significant impact not only on the people or government but also on the economy. One news can shift the curves up and down depending on the emotions of people and political situation.
+        It is important to identify the fake news from the real true news. The problem has been taken over and resolved with the help of Natural Language Processing tools which help us identify fake or true news based on historical data. The news is now in safe hands!
+
+    </p>
+    <p style="font-family: Arial, Helvetica, sans-serif;">
+        Whether it’s Facebook and the whole spectrum of monolithic technology companies feeding us only information that we want to hear to increase advertising revenue, we are losing touch on diversified information, and as consumers, are facing the likelihood that whatever we are fed may not even be accurate. This is significant — given the average adult, according to eMarketer, spends 3 hours and 54 minutes per day on our phones. That’s a lot of time to be fed information we don’t even know is accurate. As a data scientist, our goal is to harness the good of the information age to catalyze change in society, and hopefully progress within this field and likeminded researchers over time will reduce the negatives.
+    </p>
+    <p style="font-family: Arial, Helvetica, sans-serif;">COVID-19-related online fake news poses a threat to Indian public health. Health-related fake news (67.2%) is on the top of the
+        list that includes medicine, medical and healthcare facilities, viral infection, and doctor-patient
+        issues. Most of the COVID-19-related fake news is negative (63.2%) which could be a real threat to public health. These results may contribute to the academic understanding of social media fake news during the present and future health-crisis period. Amid the COVID-19 pandemic, the world is in grief with half a million dead; the healthcare systems across the globe are in disarray. In such a situation, online fake news poses a new threat to public health communication as more people now depend on the internet to get health-related information.
+    </p>
+    <br></br>
+    <div class = "container">
+      <a href="https://www.statista.com/chart/25031/covid-19-misinformation-on-whatsapp-india/" target="_blank" title="Infographic: COVID & WhatsApp Cause Surge of Fake News in India | Statista"><img class="imgalign" src="https://cdn.statcdn.com/Infographic/images/normal/25031.jpeg" alt="Infographic: COVID & WhatsApp Cause Surge of Fake News in India | Statista" width="30%" height=200px style=" !important; max-width:960px;-ms-interpolation-mode: bicubic;"/></a>
+      <a href="https://www.statista.com/chart/23105/share-of-coronavirus-misinformaton-identified-as-conspiracy-theories/" target="_blank" title="Infographic: The Most Common Coronavirus Conspiracies | Statista"><img class="imgalign" src="https://cdn.statcdn.com/Infographic/images/normal/23105.jpeg" alt="Infographic: The Most Common Coronavirus Conspiracies | Statista" width="30%" height=200px style=" !important; max-width:960px;-ms-interpolation-mode: bicubic;"/ ></a>
+      <br></br><br></br><div style="margin-left: 170px;">You will find more infographics at <a href="https://www.statista.com/chartoftheday/" target="_blank">Statista</a></div>
+    </div>
+    <br></br>
+    <p style="font-family: Arial, Helvetica, sans-serif;">Meanwhile, the World Health Organization (WHO) states that the pandemic is accompanied by an “infodemic” (i.e., information epidemic). While true information helps to mitigate the pandemic-led crisis, false information may intensify it. For instance, a single medicine related fake news claimed at least 800 lives and 5800 more had to admit to hospitals. In the scholarly arena, COVID-19-related research surge, and fake news become one of the most important topics of discussion. More studies dealing with COVID19-related online fake news focus on specific either geographical areas, or language patterns, or cross-platform analysis, or information sharing behavior. Many countries have been suffering from fake news for the last few years. Fake news not only produces discontent among people but also claims lives, often inviting communal violence and public lynching. During the COVID-19 pandemic, like elsewhere in the world, fake news threats India’s public health undeniably. For example, fake news is driving towards healthcare denial of religious minorities. Considering these reasons, the present study of fake news in the Indian context has significance and importance.
+    </p>
+
+    <p style="font-family: Arial, Helvetica, sans-serif;">
+        <h2>Characteristics of Fake News</h2>
+        <ol class='b'>
+            <li>Their sources are not genuine.</li>
+            <li>May or may not have grammatical errors.</li>
+            <li>Often uses attention-seeking words, click baits, etc.</li>
+            <li>Seems too good to be true.</li>
+            <li>Mimics the real headlines and twists the story.</li>
+        </ol>
+<br></br>
+<script id="infogram_0_05a99256-6965-4796-8192-178d1aceaab3" title="fake news" src="https://e.infogram.com/js/dist/embed.js?IYa" type="text/javascript"></script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/05a99256-6965-4796-8192-178d1aceaab3" style="color:#989898!important;text-decoration:none!important;" target="_blank">fake news</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+
+
+A study shows that a fake tweet on Twitter spreads six times faster than the real one. Thus, it becomes necessary to find whether a piece of news is true or fake whenever we read any information on the web.
+
+As humans, when we read an article, we could somehow understand its context by interpreting its words. Given today’s volume of news, it is possible to teach computers how to read and understand the difference between real and fake news using NLP techniques. All you need here are the appropriate Machine Learning algorithms and a dataset.
+
+Let’s have a quick look at the workflow for the Fake news classifier model -
+<ul class='b'>
+    <li><b>Data Collection:</b>
+        The process of gathering information from various resources for a particular research. This information is stored as the dataset for testing, evaluation, etc.
+    </li>
+    <li><b>Data Cleaning:</b>
+        Identification and removal of errors if any in the gathered information. This process is carried out mainly to improve the dataset’s quality, make it reliable, and provide accurate decision-making processes.
+    </li>
+    <li><b>Data Exploration/Analysis:</b>
+        Various visualization techniques are carried out here to understand the dataset in terms of its characteristics namely, size, quantity, etc. This process is essential to better understand the nature of the dataset and get insights faster.
+    </li>
+    <li><b>Data Modelling:</b>
+        The process of training the dataset using one or more ML algorithms to tune it according to the business need, predict or validate it accordingly.
+    </li>
+    <li><b>Data Validation:</b>
+        The method of tuning the hyperparameters before testing the model. This provides an unbiased evaluation of a model fit done on the training dataset.
+    </li>
+    <li><b>Deployment:</b>
+        Integrating an ML model into an existing environment to make more practical business decisions based on the dataset.
+    </li>
+  </ul>
+    </p>
+    <p style="font-family: Arial, Helvetica, sans-serif;"><h2>Objective</h2>
+        <ul>
+            <li>Our sole objective is to classify the news from the dataset as fake or true news (general or Covid-19 related).</li>
+            <li>Extensive EDA of news (in Jupyter Notebook).</li>
+            <li>Selecting and building a powerful model for classification.</li>
+        </ul>
+    </p>
+    <p style="font-family: Arial, Helvetica, sans-serif;"><h2><u>To Interact</u></h2>
+        Click on the following link to:
+        <ol class='a'>
+            <li>Check if a news is fake or not   <button class="button b1"
+    onclick= " window.open('/index','_blank')" >
+        Fake/Real
+    </button>  </li>
+            <li>Open an interactive graph to show data about Covid-19   <button class="button b1"
+    onclick= " window.open('/sub','_blank')" >
+        Graph
+    </button>  </li>
+        </ol>
+
+    </p>
+
+</body>
+    </div>
+</html>
