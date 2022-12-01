@@ -11,3 +11,6 @@ NOTE:
 1)Due to limited space on Heroku (for a non-premium user), the deployed application on Heroku consists of the 'fake news checker' component and only 2 graphs. Click on the link to view the deployed project on heroku- https://rvfakenews.herokuapp.com/
 
 2)For better view experience, set the Zoom of browser window to 90% either after running app.py in your flask terminal or after clicking on the link above.
+
+
+Paper Published -  https://ijtre.com/wp-content/uploads/2022/03/2022090702.pdf
