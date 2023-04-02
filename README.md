@@ -14,3 +14,16 @@ NOTE:
 
 
 Paper Published -  https://ijtre.com/wp-content/uploads/2022/03/2022090702.pdf
+
+## Website snaps:
+
+#### Main page: 
+<img src="https://github.com/Novid-Patsham/covid-project-MIT/blob/main/website%20snaps/Main%20page%201.png" width="900" height="1000">
+<img src="https://github.com/Novid-Patsham/covid-project-MIT/blob/main/website%20snaps/Main%20page%202.png" width="900" height="1000">
+
+#### Fake news classifier:
+<img src="https://github.com/Novid-Patsham/covid-project-MIT/blob/main/website%20snaps/fake_news_page.png" width="1000" height="400">
+
+#### Visualization: 
+<img src="https://github.com/Novid-Patsham/covid-project-MIT/blob/main/website%20snaps/graph_page%201.png" width="900" height="1000">
+<img src="https://github.com/Novid-Patsham/covid-project-MIT/blob/main/website%20snaps/graph_page%202.png" width="900" height="1000">
